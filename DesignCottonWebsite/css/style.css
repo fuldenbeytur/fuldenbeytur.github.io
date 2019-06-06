@@ -1,0 +1,864 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #E8EAE3;
+    color: #373833;
+    font-family: 'Open Sans', sans-serif;
+    /*	font-family: 'Karla', sans-serif;*/
+    /*	font-family: 'Archivo', sans-serif;*/
+    /*	font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #373833;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #FA2742;
+    outline: none;
+    text-decoration: none;
+
+}
+
+button:hover,
+button:active,
+button:focus {
+    color: #FA2742;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.container {
+    /*	width: 100%;*/
+    /*
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+*/
+}
+
+/*--------header--------------*/
+
+#header {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 100;
+    /*?*/
+    background-color: none;
+    position: fixed;
+
+}
+
+
+
+/*--------header--------------*/
+
+/*-------nav menu-----------*/
+
+/*
+#nav-menu{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	
+}
+*/
+
+#logo {
+
+    margin-top: 20px;
+    margin-left: 40px;
+    /*	font-family: 'Merriweather', serif;*/
+    /*	font-family: 'Playfair Display', serif;*/
+    font-family: 'Bitter', serif;
+
+    font-size: 1.8em;
+}
+
+#logo a {
+    color: #FA2742;
+}
+
+.nav-menu ul {
+    width: 100%;
+    height: 130px;
+    /*	text-align: center;*/
+    float: left;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 80px;
+    top: 0;
+    overflow: hidden;
+    font-weight: 500;
+
+    /*?*/
+    /*		font-size: 1.05em;*/
+}
+
+.nav-menu li {
+
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 20px;
+
+
+}
+
+.dropbtn {
+    width: 125px;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    background-color: #F6F6F8;
+    text-align: left;
+    padding-right: 20px;
+    color: #373833;
+    font-weight: 500;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    padding-top: 3px;
+}
+
+
+/*------nav menu-------*/
+
+/*----nav menu toggle ------*/
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 20px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    label {
+        color: #E8EAE3;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu ul {
+        display: none;
+        clear: both;
+    }
+
+    /*
+    .nav-menu a{
+        display: block;
+        border-bottom: 1px solid #aeaeeb;
+        margin: 0;
+    }
+*/
+    #toggle:checked + .nav-menu ul li a {
+        display: block;
+
+
+    }
+
+}
+
+/*---------nav menu toggle------*/
+
+
+/*--------motto-------*/
+
+#motto {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/motto2.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.motto-container {
+    float: right;
+    width: 35%;
+    text-align: center;
+    padding-top: 300px;
+    margin-right: 60px;
+
+}
+
+/*-------------motto---------------*/
+
+/*-----------------about------------*/
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #E3E3E3;
+
+}
+
+#about .container h3 {
+    padding-top: 80px;
+    padding-left: 150px;
+    font-size: 2.9em;
+    color: #FA2742;
+    font-family: 'Bitter', serif;
+}
+
+.flexabout {
+    display: flex;
+}
+
+
+.aboutflex {
+    padding-top: 0px;
+
+}
+
+#about .aboutflex h3 {
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-left: 220px;
+    padding-bottom: 30px;
+
+}
+
+#about .aboutflex p {
+    width: 70%;
+    padding-bottom: 30px;
+    padding-left: 220px;
+    text-align: center;
+}
+
+.aboutflex img {
+    padding-left: 100px;
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+
+}
+
+/*-------------about----------------/
+
+/*-------------designwork---------*/
+
+
+#designwork {
+    width: 100%;
+    height: 320vh;
+}
+
+.designworks {
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*---modern---*/
+#modern {
+    width: 100%;
+    height: 120vh;
+
+    display: block;
+    position: relative;
+}
+
+#modern::after {
+    content: "";
+    background-image: url(../images/modernbackground.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#modern h3 {
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-left: 290px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    color: #FA2742;
+    font-family: 'Bitter', serif;
+}
+
+#modern p {
+    width: 70%;
+    color: #373833;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-left: 290px;
+    text-align: center;
+}
+
+/*
+img {
+  vertical-align: middle;
+}
+*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.moderngallery {
+    position: relative;
+    margin-left: 22%;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    /*	display: inline-block;*/
+    margin-left: 10%;
+
+}
+
+.mySlides img {
+    border: 1px solid #373833;
+    border-radius: 10%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+/*
+.cursor {
+  cursor: pointer;
+}
+*/
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    padding: 16px;
+    margin-left: 5%;
+    margin-top: -50px;
+    color: #373833;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    left: 690px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: #FA2742;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 20px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+/*
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+width: 200px;
+}
+*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    display: none;
+    float: left;
+    width: inherit;
+    padding: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*-----traditional----*/
+
+#traditional {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    /*	background-image: url(../images/traditional3.jpg);*/
+
+    ;
+}
+
+#traditional h3 {
+    font-size: 3em;
+    padding-top: 50px;
+    padding-left: 290px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    color: #FA2742;
+    font-family: 'Italianno', cursive;
+
+}
+
+#traditional p {
+    font-size: 2em;
+    width: 70%;
+    height: 30px;
+    color: #373833;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-left: 290px;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+
+}
+
+.traditionalflex {
+    padding-left: 90px;
+    width: 10px;
+    /*	height: 20%;*/
+    display: inline;
+}
+
+.traditionalflex img {
+    padding-left: 50px;
+    padding-top: 40px;
+    width: 20%;
+    height: 50%;
+    border-radius: 15%;
+}
+
+/*----colorful----*/
+
+#colorful {
+    width: 100%;
+    height: 100vh;
+    /*	background-color: #FFFFFF;*/
+    position: relative;
+
+    /*
+	background-image: url(../images/colorfulbackground.jpg);
+	background-size: cover;
+*/
+}
+
+#colorful::after {
+    background-image: url(../images/colorfulbackground.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    opacity: 0.5;
+
+}
+
+#colorful h3 {
+    font-size: 2.5em;
+    padding-left: 290px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    color: #FA2742;
+    font-family: 'Kalam', cursive;
+
+}
+
+#colorful p {
+    font-size: 1.2em;
+    width: 70%;
+    height: 30px;
+    color: #373833;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-left: 290px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+
+}
+
+/*
+img {
+  vertical-align: middle;
+}
+*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.mycolorfulgallery {
+    position: relative;
+    margin-left: 22%;
+
+}
+
+/* Hide the images by default */
+.mycolorfulSlides {
+    /*	display: inline-block;*/
+    margin-left: 10%;
+
+}
+
+.mycolorfulSlides img {
+    border: 1px solid #373833;
+    border-radius: 10%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+/*
+.cursor {
+  cursor: pointer;
+}
+*/
+
+/* Next & previous buttons */
+.prevslayt,
+.nextslayt {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    padding: 16px;
+    margin-left: 5%;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextslayt {
+    left: 620px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevslayt:hover,
+.nextslayt:hover {
+    color: #FA2742;
+}
+
+/* Number text (1/3 etc) */
+.numberimage {
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 20px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+/*
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+width: 200px;
+}
+*/
+
+.rowcolor:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.columncolor {
+    display: none;
+    float: left;
+    width: inherit;
+    padding: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.democolor {
+    opacity: 0.6;
+}
+
+.active,
+.democolor:hover {
+    opacity: 1;
+}
+
+
+/*-------------designwork---------*/
+
+/*-------------workshops---------*/
+
+#workshops {
+    width: 100%;
+    height: 100vh;
+
+    display: block;
+    position: relative;
+    /*
+	background-color: #FFFFFF;
+	background-image: url(../images/workshops.jpg);
+	background-size: cover;
+*/
+
+}
+
+#workshops::after {
+    content: "";
+    background-image: url(../images/workshops.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#workshops .container h3 {
+    padding-top: 80px;
+    padding-left: 150px;
+    font-size: 2.9em;
+    color: #FA2742;
+    font-family: 'Bitter', serif;
+}
+
+
+.workshopsflex {
+
+
+    margin-top: 90px;
+    margin-left: 10%;
+    width: 10%;
+    display: inline-flex;
+}
+
+.workshopsflex p {
+
+    border: 3px solid #F6F6F8;
+    background-color: #F6F6F8;
+    border-radius: 30px;
+    padding-left: 100%;
+    padding-right: 100%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.buttonflex {
+
+
+    /*	margin-top: 90px;*/
+    margin-left: 10%;
+    width: 10%;
+    display: flex;
+}
+
+.buttonflex a {
+
+    /*	display:inline;*/
+    width: 114px;
+    border: 3px solid #F6F6F8;
+    border-radius: 30px;
+    background-color: #F6F6F8;
+    /*	padding-top: 20px;*/
+    /*	margin-left: 10%;*/
+    padding-left: 5%;
+}
+
+#buttonmodern {
+    position: absolute;
+    margin-left: 1%
+}
+
+#buttontradi {
+    position: absolute;
+    margin-left: 28%
+}
+
+#buttoncolor {
+    position: absolute;
+    margin-left: 55%
+}
+
+.buttonflex .popup {
+
+    /*	padding-left: 18%;*/
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #FA2742;
+    color: #E8EAE3;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 100%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FA2742 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+
+/*-------------workshops---------*/
+
+/*-------------contact---------*/
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+}
+
+#contact .container h3 {
+    padding-top: 80px;
+    padding-left: 150px;
+    font-size: 2.9em;
+    color: #FA2742;
+    font-family: 'Bitter', serif;
+}
+
+#contact .container p {
+    padding-top: 10px;
+    padding-left: 15%
+}
+
+#contact form {
+
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+#contact input {
+    font-size: 1em;
+    width: 60%;
+    height: 40px;
+    margin: 8px;
+    border: 1px solid #373833;
+    border-radius: 10px;
+    box-shadow: 30px;
+    padding-left: 10px;
+
+}
+
+#contact #message {
+    height: 150px;
+}
+
+#sendmessage {
+    margin-left: 60%;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #373833;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #373833;
+}
+
+
+
+/*-------------contact---------*/
+
+
+/*----footer------*/
+
+.copyright{
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 1.2em;
+}
