@@ -1,0 +1,89 @@
+body {
+	background-color: #f2efe8;
+	background-image: url(../image/gettygifhomeimage.jpg);
+	background-size: 100%;
+}
+
+#getty {
+
+	font-size: 3.0em;
+	color: #e05038;
+	margin-top: 5%;
+	margin-left: 35%;
+}
+
+._container input {
+
+	width: 25%;
+	margin-top: 0%;
+	margin-left: 24%;
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 10px;
+	font-size: 1.1em;
+	color: #e05038;
+}
+
+::placeholder {
+	color: #e6af4b;
+	padding-left: 20px;
+}
+
+._container button {
+	width: 15%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	font-size: 1.2em;
+	background-color: #e6af4b;
+	color: #e05038;
+	border: 2px solid #e6af4b;
+	font-weight: 600;
+}
+
+button:hover,
+button:active,
+button:focus {
+	
+	color: white;
+	outline: none;
+	text-decoration: none;
+
+}
+
+#message {
+	margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 2em;
+	color: #e05038;
+	font-weight: 700;
+}
+#container{
+	margin-left:60px;
+}
+
+img{
+	padding: 10px;
+}
+
+
+@media (max-width: 48em) {
+	#getty {
+		margin-left:100px;
+	}
+	._container input{
+		margin-left: 10px;
+		width: 80%;
+	}
+	._container button{
+		width: 80%;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	
+	#container{
+		margin-left: 20px;
+	}
+}
