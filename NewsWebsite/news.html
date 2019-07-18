@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Website with API</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+	<header class="header">
+		<a href="index.html" class="logo" style="color:#c43235; font-weight: bold;">News</a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+	</header>
+
+
+	<section id="news">
+
+		<h1>Breaking News</h1>
+		<div class="buttons">
+			<button onclick="myFunction()" class="dropbtn">Categories</button>
+			<div id="myDropdown" class="dropdown-content">
+				<button id='business'>Business</button>
+				<button id='entertainment'>Entertainment</button>
+				<button id='health'>Health</button>
+				<button id='science'>Science</button>
+				<button id='sports'>Sports</button>
+				<button id='technology'>Technology</button>
+
+			</div>
+
+			<button id="bbcnews">BBC News</button>
+			<!--		<button id="cnbc">CNBC</button>-->
+			<button id="cnn">CNN</button>
+			<!--		<button id="dailymail">Daily Mail</button>-->
+			<button id="foxnews">Fox News</button>
+			<!--		<button id="hackernews">Hacher News</button>-->
+			<button id="independent">Independent</button>
+			<button id="mtvnews">MTV News</button>
+			<button id="nationalgeo">National Geo</button>
+			<button id="newscientist">New Scientist</button>
+			<button id="theeconomist">The Economist</button>
+		</div>
+
+
+
+
+
+		<div id=topNewsHeader></div>
+
+		<div id="topnews">
+
+		</div>
+
+
+
+	</section>
+
+
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
