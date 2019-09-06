@@ -5,6 +5,7 @@ body {
 	font-family: monospace;
 }
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -162,8 +163,8 @@ a {
 /*-----opening page--------*/
 
 #homePage {
-	width: 100%;
-	height: 90vh;
+	width: 85%;
+	height: 80vh;
 	display: inline-flex;
 	padding-top: 10%;
 	padding-left: 15%;
@@ -177,8 +178,8 @@ a {
 #homePage::after {
 	content: "";
 	background-image: url(../images/newsimage3.jpg);
-	background-size: cover;
-	background-repeat: repeat;
+	background-size:contain;
+/*	background-repeat: repeat;*/
 	opacity: 0.8;
 	top: 0;
 	left: 0;
@@ -210,9 +211,8 @@ a {
 
 @media (max-width: 48em) {
 	#homePage {
-		padding-top: 28%;
-		padding-left: 20px;
-
+		padding-top: 20%;
+		
 	}
 
 	#homePage h1 {
