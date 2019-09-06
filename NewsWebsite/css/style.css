@@ -211,9 +211,9 @@ a {
 
 @media (max-width: 48em) {
 	#homePage {
-		padding-top: 20%;
+		padding-top: 10%;
 		padding-left: 10%;
-		width: 90%;
+		width: 94%;
 		height: 82vh;
 		
 	}
