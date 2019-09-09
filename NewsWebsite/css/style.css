@@ -3,6 +3,7 @@ body {
 	margin-top: 0px;
 	background-color: #f4f4f4;
 	font-family: monospace;
+	overflow-x: hidden;
 }
 
 
@@ -163,23 +164,24 @@ a {
 /*-----opening page--------*/
 
 #homePage {
-	width: 85%;
-	height: 80vh;
+	width: 100%;
+	height: auto;
 	display: inline-flex;
 	padding-top: 10%;
+	padding-bottom: 7%;
 	padding-left: 15%;
 	font-size: 1.5em;
 	font-family: monospace;
 	position: relative;
-
+	box-sizing: border-box;
+	
 
 }
 
 #homePage::after {
 	content: "";
 	background-image: url(../images/newsimage3.jpg);
-	background-size:contain;
-/*	background-repeat: repeat;*/
+	background-size: 100%;
 	opacity: 0.8;
 	top: 0;
 	left: 0;
@@ -203,31 +205,53 @@ a {
 	color: white;
 }
 
-/*
-#twitter-timeline {
-	width: 100px;
-}
-*/
+
 
 @media (max-width: 48em) {
 	#homePage {
-		padding-top: 10%;
-		padding-left: 10%;
-		width: 94%;
-		height: 82vh;
-		
+		padding-top: 40%;
+		padding-left: %;
+
 	}
 
 	#homePage h1 {
 		font-size: 1.5em;
-		padding-top: 68%;
-		padding-left: 10%;
-		width: 15%;
+		margin-top: -94%;
+		margin-left: -160%;
+		font-size: 2em;
 
 	}
 
 	#homePage h2 {
-		padding-left: 10%;
+		font-size: 1.5em;
+		margin-top: -10%;
+		margin-left: -160%;
+		font-size: 1.1em;
+	}
+
+
+}
+
+@media (max-width: 22em) {
+	#homePage {
+		padding-top: 50%;
+
+	}
+
+	#homePage h1 {
+		font-size: 1.8em;
+		margin-top: -90%;
+		margin-left: -160%;
+		
+		
+	
+
+	}
+
+	#homePage h2 {
+		font-size: 1.7em;
+		margin-top: -10%;
+		margin-left: -160%;
 		font-size: 0.8em;
 	}
 
