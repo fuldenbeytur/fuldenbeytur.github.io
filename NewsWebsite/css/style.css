@@ -174,7 +174,7 @@ a {
 	font-family: monospace;
 	position: relative;
 	box-sizing: border-box;
-	
+
 
 }
 
@@ -196,6 +196,7 @@ a {
 	padding-top: 20%;
 	padding-left: 15%;
 	color: white;
+	width: 60%;
 
 }
 
@@ -205,58 +206,56 @@ a {
 	color: white;
 }
 
+	#homePage .start {
+/*		padding-top: -300%;*/
+/*		margin-left: -4%;*/
+		text-decoration:underline;
+		color: white;
+		font-size: 0.6em;
+		width: 60%;
+	}
+
 
 
 @media (max-width: 48em) {
 	#homePage {
-		padding-top: 40%;
+		padding-top: 46%;
 		padding-left: %;
 
 	}
 
 	#homePage h1 {
-		font-size: 1.5em;
-		margin-top: -94%;
-		margin-left: -160%;
-		font-size: 2em;
-
-	}
-
-	#homePage h2 {
-		font-size: 1.5em;
-		margin-top: -10%;
-		margin-left: -160%;
-		font-size: 1.1em;
-	}
-
-
-}
-
-@media (max-width: 22em) {
-	#homePage {
-		padding-top: 50%;
-
-	}
-
-	#homePage h1 {
 		font-size: 1.8em;
-		margin-top: -90%;
-		margin-left: -160%;
-		
-		
-	
+		margin-top: -70%;
+		margin-left: -150%;
+		font-size: 2em;
+		width: 200%;
 
 	}
 
 	#homePage h2 {
+		display: none;
+/*
 		font-size: 1.7em;
 		margin-top: -10%;
 		margin-left: -160%;
-		font-size: 0.8em;
+		font-size: 1.1em;
+*/
 	}
+	
+	#homePage .start {
+/*		padding-top: -300%;*/
+		margin-left: -6%;
+		text-decoration:underline;
+		color: white;
+		font-size: 0.6em;
+		width: 60%;
+	}
+	
 
 
 }
+
 
 
 /*----------news------------*/
