@@ -4,6 +4,7 @@ body {
 	background: white;
 	color: #373833;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 	/*	font-family: 'Karla', sans-serif;*/
 	/*	font-family: 'Archivo', sans-serif;*/
 	/*	font-family: 'Source Sans Pro', sans-serif;*/
