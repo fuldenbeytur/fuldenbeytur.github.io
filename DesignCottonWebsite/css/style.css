@@ -226,7 +226,7 @@ header {
 
 #motto {
 	width: 100%;
-	height: 120vh;
+	height: 100vh;
 	display: block;
 	position: relative;
 
@@ -380,7 +380,7 @@ header {
 /*---modern---*/
 #modern {
 	width: 100%;
-	height: 120vh;
+	height: 100vh;
 
 	display: block;
 	position: relative;
@@ -550,7 +550,7 @@ width: 200px;
 
 #traditional {
 	width: 100%;
-	height: 140vh;
+	height: 100vh;
 	background-color: #FFFFFF;
 	/*	background-image: url(../images/traditional3.jpg);*/
 
