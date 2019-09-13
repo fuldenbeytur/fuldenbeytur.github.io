@@ -216,6 +216,7 @@ nav a {
 	height: 100%;
 	display: block;
 	position: relative;
+	padding-top: 10%;
 
 }
 
@@ -338,6 +339,7 @@ nav a {
 
 	#info {
 		background-size: 0%;
+		padding-top: 30%;
 	}
 }
 
