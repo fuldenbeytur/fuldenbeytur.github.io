@@ -196,6 +196,8 @@ img::-moz-selection {
 }
 
 header.masthead {
+	height: 100vh;
+	min-height: 100%;
 	text-align: center;
 	color: #373833;
 	background-image: url(../img/homepage3.jpg);
